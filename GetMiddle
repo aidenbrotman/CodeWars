@@ -1,0 +1,13 @@
+def get_middle(s):
+    s_list = list(s)
+    halved_list = len(s_list) // 2
+    list_len = len(s_list)
+    if list_len % 2 == 0:
+        print(s_list[halved_list - 1] + s_list[halved_list])
+    else:
+        print(s_list[halved_list])
+        
+        
+
+
+get_middle('middle')

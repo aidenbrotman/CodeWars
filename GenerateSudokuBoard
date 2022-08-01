@@ -1,0 +1,26 @@
+import random
+import time
+def generate_board(start):
+    if start == 'Let\'s go!':
+        list = []
+        puzzle_board = []
+        b = ''.join('_')
+        r = random.SystemRandom()
+        for z in range(0, 9):
+            del list[:]
+            for i in range(1, 10):
+                list.append(i)
+                if i == 9:
+                    r.shuffle(list)
+                    for index, x in enumerate(list):
+                        if random.randint(0, 1):
+                            list[index] = random.choice(b)
+            puzzle_board.append(list[:])
+            print('| ' + ' | '.join(map(str, puzzle_board[z])) + ' |')
+        if input() ==       
+                    
+
+generate_board('Let\'s go!')
+            
+
+

@@ -1,0 +1,7 @@
+def lovefunc( flower1, flower2):
+    if (round((flower1 + flower2) % 2) > 0):
+        print(True)
+    else:
+        print(False)
+
+lovefunc(2, 2)

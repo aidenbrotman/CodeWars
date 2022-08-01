@@ -1,0 +1,4 @@
+def array_diff(a, b):
+    diff_list = [x for x in a if not x in b]
+    print(diff_list)
+array_diff([1, 2, 2, 2, 3], [1, 3])
